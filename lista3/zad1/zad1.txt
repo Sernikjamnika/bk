@@ -14,3 +14,4 @@ dostępna jest w pliku 'zad1.d.txt'. Nieszyfrowanym protokołem był, np. HTTP. 
 uzyskać login i hasło do tak cennych stron, jak 'forum.pokemony.com' oraz 'gry.pl',
 's1.muzlostyle.ru', 'proxy.bg.pwr.wroc.pl'.
 e) Mapa lokalizacji, z którymi łączyły się komputery dostępne są w pliku 'zad1e.txt'
+Eksperyment wykonywałem z Maciejem Dziadykiem.
