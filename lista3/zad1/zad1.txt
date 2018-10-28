@@ -1,0 +1,16 @@
+Eksperymenty z zadania 1. wykonywałem w Pasażu Grunwaldzkim.
+Używałem głównie narzędzia Wireshark, programu airmon-ng i airdump-ng.
+Eksperyment prowadziłem w dniach 28.10 i 29.10.
+Wszystkie dane są pozyskiwane z plików 'grunwald_27_10_18.pcapng' 
+oraz 'grunwald_28_10_18.cap'.
+a) Lista SSID, do których chciały połączyć się urządzenia podana jest w osobnym pliku
+tekstowym - 'zad1a.txt'.
+b) Siecią utworzoną przeze mnie jest sieć o nazwie 'jamnik'. Podłączyły się do niej dwie
+osoby o czym świadczy kolumna 'Destination' pry pakietach DNS tj.192.168.43.152, 192.168.43.56
+c) Lista stron dostępna jest w pliku 'zad1c.txt' zarówno dla sieci 'jamnik', jak 
+i dla nasłuchiwania w trybie monitora
+d) Lista protokołów i usług, z których korzystali użytkownicy mojej sieci 
+dostępna jest w pliku 'zad1.d.txt'. Nieszyfrowanym protokołem był, np. HTTP. Mogłem 
+uzyskać login i hasło do tak cennych stron, jak 'forum.pokemony.com' oraz 'gry.pl',
+'s1.muzlostyle.ru', 'proxy.bg.pwr.wroc.pl'.
+e) Mapa lokalizacji, z którymi łączyły się komputery dostępne są w pliku 'zad1e.txt'
