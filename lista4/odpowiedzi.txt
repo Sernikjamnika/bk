@@ -1,0 +1,16 @@
+a) Program w worst-casie sprawdza |alfabet|^|k1| kluczy, wtedy, gdy k1 = ff...f.
+Average-case to sprawdzenie połowy z worst-case'a. Stąd, że każdy z procesów po kolei
+dostaje kolejne permutacje.
+b) Liczba możliwych kluczy w zadaniu to 2^128. Więc, aby mieć 100% pewność potrzebne nam jest 2^128
+sekretów. Natomiast powinniśmy zwrócić uwagę na tzw. paradoks urodzinowy. Zgodnie z nim, aby 
+znaleźć kolizję wystarczy wygenerować 1.1744 * 2^64 sekretów.
+c) Gdy klucz jest prawdziwie losowy przy ataku typu brute force nie ma to znaczenia. Średnio
+trzeba by było sprawdzić połowę możliwych kluczy.
+d) Koszt złamania w ciągu 24 godzin (szacuję czas na 2^n-2 z wykresu wygenerowanego, przez
+skrypt `graph.py`):
+- 48 bitów ~ 2^46 sekund -> więcej niż 2 * 10^6 lat -> 3561279671 zł
+- 56 bitów ~ 2^54 sekund -> więcej niż 5 * 10^8 lat -> 911687595799 zł
+- 64 bitów ~ 2^62 sekund -> więcej niż 1 * 10^11 lat -> 233392024524673 zł
+- 80 bitów ~ 2^78 sekund -> więcej niż 9 * 10^15 lat -> 1 * 10^19 zł
+- 100 bitów ~ 2^98 sekund -> więcej niż 1 * 10^22 lat -> 1 * 10^25 zł
+Zniżka została uwzględniona.
