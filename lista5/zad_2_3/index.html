@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0262)https://primo.bg.pwr.edu.pl/pds?func=load-login&calling_system=primo&institute=48TUR&lang=pol&url=http://primo.bg.pwr.edu.pl:80/primo_library/libweb/action/login.do?targetURL=https://primo.bg.pwr.edu.pl/primo_library/libweb/action/myAccountMenu.do?vid=48TUR_VIEW -->
+<html class="fa-events-icons-ready"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<title>Exlibris - Login</title>
+ <!-- START filename: meta-tags.pds -->
+ <meta http-equiv="Cache-Control" content="no-cache"> 
+ <meta http-equiv="Pragma" content="no-cache"> 
+ <meta http-equiv="Expires" content="Sun, 06 Nov 1994 08:49:37 GMT"> 
+ 
+ <!-- END   filename: meta-tags.pds -->
+  <link rel="stylesheet" href="./Exlibris - Login_files/new_pds.css" type="text/css">
+  <script src="./Exlibris - Login_files/0ad2e7536a.js"></script><link href="./Exlibris - Login_files/0ad2e7536a.css" media="all" rel="stylesheet">
+ <script type="text/javascript">
+  function pdsLogin() {
+  var login = document.getElementById("login-name").value;
+  if (login.indexOf('@') > -1) {document.getElementById("login-name").value = login.substr(0, login.indexOf('@'));}
+  	document.forms["form1"].submit();
+  }
+  </script>
+ 
+ </head>
+ <body onload="document.forms.form1.bor_id.focus()" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+ 
+ <form name="form1" action="https://localhost/auth" method="POST">
+ <input type="hidden" value="login" name="func">
+ <input type="hidden" name="calling_system" value="primo">
+ <input type="hidden" name="term1" value="short">
+ <!-- starts change #F040b -->
+ <input type="hidden" name="selfreg" value="">
+ <!-- end change #F040b -->
+ <!-- move input hidden -->
+ 
+ 
+ <!-- end move input hidden -->
+ 
+ 
+ 
+ <div class="login">
+ 		<div class="login-screen">
+ 		<img src="./Exlibris - Login_files/logo_48TUR_pl.png" alt="CWINT PWr">
+ 			<div class="app-title">
+ 				<h2>Logowanie do systemu bibliotecznego</h2>
+ 				<h5>Login (bez domeny) i hasło z poczty elektronicznej PWr<br>
+ 				<b>lub</b><br>
+ 				Login i hasło z systemu ALEPH</h5>
+ 				<h4></h4>
+ 			</div>
+ 			
+ 			<div class="login-form">
+ 				<div class="control-group">
+ 				<input type="text" class="login-field" name="bor_id" maxlength="100" value="" placeholder="login" id="login-name">
+ 
+ 				<i class="fa fa-user" aria-hidden="true"></i>
+ 				
+ 				</div>
+ 			
+ 				<div class="control-group">
+ 				<input type="password" class="login-field" maxlength="100" name="bor_verification" value="" placeholder="hasło" id="login-pass">
+ 				<i class="fa fa-lock" aria-hidden="true"></i>
+ 				</div>
+ 				
+ 
+ 
+ <input type="hidden" value="48TUR"> <!-- option -> input -->                    
+ <input type="hidden" value="48TUR"> <!-- option -> input -->                    
+               	<div class="button-group">
+ 				<input tabindex="4" type="submit" class="btn btn-primary btn-large btn-block" onclick="pdsLogin()" value="Zaloguj">
+ 				<!--<INPUT tabindex="4" type="submit" class="btn btn-primary btn-large btn-block" value="Zaloguj">		-->	
+ 				<input type="button" class="btn btn-primary btn-large btn-block" onclick="history.back();return false;" value="Powrót">
+ 				</div>
+ 				
+ 				<a class="login-link" href="https://primo.bg.pwr.edu.pl/primo_login_help.html" target="_blank">Problem z logowaniem?</a>
+ 			</div>
+ 		</div>
+ 	</div>    
+ 
+ <input type="hidden" name="url" value="http://primo.bg.pwr.edu.pl:80/primo_library/libweb/action/login.do?targetURL=https%3A%2F%2Fprimo%2Ebg%2Epwr%2Eedu%2Epl%2Fprimo%5Flibrary%2Flibweb%2Faction%2FmyAccountMenu%2Edo%3Fvid%3D48TUR%5FVIEW">
+
+
+</form></body></html>
