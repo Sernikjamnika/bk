@@ -127,7 +127,7 @@ LOGIN_REDIRECT_URL=reverse_lazy('history')
 
 EMAIL_HOST = 'poczta.interia.pl'
 EMAIL_HOST_USER = 'mati.walczak@interia.eu'
-EMAIL_HOST_PASSWORD = "pokemonemail997"
+EMAIL_HOST_PASSWORD = "password"
 EMAIL_PORT      = 587
 EMAIL_USE_TLS   = True
 
