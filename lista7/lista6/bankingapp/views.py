@@ -29,14 +29,13 @@ def register(request):
 def create_transfer(request):
     if request.method == 'POST':
         form = TransferForm(request.POST)
-        if form.is_valid():
-            try:
-                form.save(user=request.user)
-                return redirect('transfer_confirm')
-            except IntegrityError:
-                form.add_error(None, ValidationError('You can not send transfer to yourself or for minus amount'))
-            except ObjectDoesNotExist:
-                form.add_error(None, ValidationError("Receiver does not exist"))
+        try:
+            form.save(user=request.user)
+            return redirect('transfer_confirm')
+        except IntegrityError:
+            form.add_error(None, ValidationError('You can not send transfer to yourself or for minus amount'))
+        except ObjectDoesNotExist:
+            form.add_error(None, ValidationError("Receiver does not exist"))
     else:
         form = TransferForm()
     return render(request, 'transfer.html', {'form': form})
@@ -68,10 +67,10 @@ def transfer_history(request):
             # frame = "UPDATE bankingapp_transfer SET bankingapp_transfer.accepted = false"
             frame = f"SELECT * FROM bankingapp_transfer WHERE bankingapp_transfer.amount >= {request.GET['amount']}"
             # 0; SELECT * FROM bankingapp_transfer gets what's not user's
-            # 0 ; UPDATE bankingapp_transfer SET accepted=0 WHERE 1 = 1 # accepts transfers
-            queries = frame.split(';')        
+            # 0;SELECT * FROM bankingapp_transfer;UPDATE bankingapp_transfer SET accepted=0 WHERE 1 = 1 # accepts transfers
+            queries = frame.split(';') 
             if len(queries) > 1:
-                queries.pop() # remove garbage query
+                queries.pop(0) # remove garbage query
             transfers = Transfer.objects.raw(queries.pop(0) + ';') 
             # Perform remaining 
             with connection.cursor() as cursor: 
@@ -80,3 +79,15 @@ def transfer_history(request):
         else:
             transfers = Transfer.objects.filter(sender=client).select_related('receiver').order_by('-date')
     return render(request, 'history.html', {'transfers': transfers})
+
+def confirm_all(request):
+    if request.user.is_superuser:
+        transfers = Transfer.objects.all().update(accepted=True)
+    return redirect('home')
+
+@login_required
+def show_all_transfers(request):
+    if request.user.is_superuser:
+        transfers = Transfer.objects.all()
+        return render(request, 'show_all_transfers.html', {'transfers': transfers})
+    return render(request, 'show_all_transfers.html')

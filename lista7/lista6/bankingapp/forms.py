@@ -25,8 +25,8 @@ class TransferForm(forms.ModelForm):
         # get the instance so we can add the user to it.
         transfer = super(TransferForm, self).save(commit=False)
         print('IN SAVE METHOD')
-        print(self.cleaned_data['account_number'])
-        receiver = Client.objects.filter(account_number=self.cleaned_data['account_number'])
+        print(self.data['account_number'])
+        receiver = Client.objects.filter(account_number=self.data['account_number'])
         if len(receiver) == 0:
             raise ObjectDoesNotExist
         else:

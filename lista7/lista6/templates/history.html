@@ -21,7 +21,7 @@
             {% for t in transfers %}
                 <tr>
                     <td>{{ t.receiver.account_number }}</td>
-                    <td>{{ t.title }}</td>
+                    <td>{{ t.title | safe}}</td>
                     <td>{{ t.amount }}</td>
                     <td>{{ t.date }}</td>
                     <td>{{ t.accepted }}</td>

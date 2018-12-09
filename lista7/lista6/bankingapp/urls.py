@@ -1,7 +1,7 @@
 from django.urls import path
 from django.views.generic.base import TemplateView
 from django.contrib.auth import views as auth_views
-from .views import register, transfer_history, create_transfer, transfer_confirm
+from .views import register, transfer_history, create_transfer, transfer_confirm, show_all_transfers, confirm_all
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
@@ -12,4 +12,6 @@ urlpatterns = [
     path('transfer_confirm/', transfer_confirm,  name='transfer_confirm'),
     path('wrong_transfer/', TemplateView.as_view(template_name='wrong_transfer.html'), name='wrong_transfer'),
     path('history/', transfer_history, name ='history'),
+    path('admin_all_transfers/', show_all_transfers, name ='all_transfers'),
+    path('accept_all/', confirm_all, name ='all_accept'),
 ]

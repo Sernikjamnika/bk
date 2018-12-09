@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}All transfers{% endblock %}
+
+{% block content %}
+    <h2>All transfers</h2>
+    {% if user.is_superuser %}
+    {% autoescape off %}
+        <table>
+            {% for t in transfers %}
+                <tr>
+                    
+                    <td>{{ t.receiver.account_number  | safe}}</td>
+                    <td>{{ t.title | safe}}</td>
+                    <td>{{ t.amount  | safe}}</td>
+                    <td>{{ t.date  | safe}}</td>
+                    <td>{{ t.accepted  | safe}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endautoescape %}
+    {% else %}
+        <p>Please <a href={% url 'login' %}>log in</a> as admin first</p>
+    {% endif %}
+    <!-- <script src="{% static 'account_adder.js' %}"></script>  -->
+
+{% endblock %}

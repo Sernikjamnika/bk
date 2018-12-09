@@ -9,4 +9,8 @@
         <a href={% url 'create_transfer' %}>Transfer</a>
         <a href={% url 'history' %}>History</a>
     {% endif %}
+    {% if user.is_superuser %}
+        <a href={% url 'all_transfers' %}>Show all transfers</a>
+    {% endif %}
+
 {% endblock %}

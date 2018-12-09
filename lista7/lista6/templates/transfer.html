@@ -24,6 +24,7 @@
     {% if user.is_authenticated %}
     <p>Example 50087356605277337492923659 83652379256144345665478385</p>
         <form method="post">
+            {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Submit</button>
         </form>
