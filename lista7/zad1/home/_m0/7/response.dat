@@ -1,0 +1,46 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 Dec 2018 21:47:31 GMT
+Server: WSGIServer/0.2 CPython/3.6.7
+Content-Type: text/html; charset=utf-8
+Expires: Fri, 07 Dec 2018 21:47:31 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Length: 882
+Set-Cookie: csrftoken=vphBNaEjoselOHeA1eqKgdaNiTJ89CYYgXRiBAXzpQ3Ax55XDMam8cp4jsQ9eXCK; expires=Fri, 06 Dec 2019 21:47:31 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <h1>Bank ZGCH</h1>
+    
+      <a href="/login/">Login</a>
+      <a href="/register/">Register</a>
+    
+  </header>
+  <hr>
+  <main>
+    
+  <h2>Login</h2>
+  <form method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="qAreVrzeg8NzPL4VnwleQgrmrCGYGp4cb81VJRSuhwCOy9ViZ45QIfGDsbNZLKIY">
+    <p><label for="id_username">Username:</label> <input type="text" name="username" autofocus required id="id_username"></p>
+<p><label for="id_password">Password:</label> <input type="password" name="password" required id="id_password"></p>
+    <button type="submit">Login</button>
+    
+    
+    <div class="password-reset-link">
+      <a href="/admin/password_reset/">'Forgotten your password or username?'</a>
+    </div>
+    
+  </form>
+
+  </main>
+  <hr>
+</body>
+</html>

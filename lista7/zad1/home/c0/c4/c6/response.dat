@@ -1,0 +1,168 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 Dec 2018 21:50:14 GMT
+Server: WSGIServer/0.2 CPython/3.6.7
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie
+Content-Length: 3809
+Set-Cookie: csrftoken=aD5DaCX8q9FgxJdRnevgMup8qJVOx2s0ADRTFaScYSGDJdDKKgHvqMFAvpASINlk; expires=Fri, 06 Dec 2019 21:50:14 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+<!DOCTYPE html>
+
+<html lang="en-us" >
+<head>
+<title> | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+<link rel="stylesheet" type="text/css" href="/static/admin/css/login.css">
+
+
+
+
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" login"
+  data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">BANK ZGCH</a></h1>
+
+        </div>
+        
+        
+    </div>
+    <!-- END Header -->
+    
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        
+        
+
+<p class="errornote">
+Please correct the error below.
+</p>
+
+
+
+
+<div id="content-main">
+
+
+
+<form action="" method="post" id="login-form"><input type="hidden" name="csrfmiddlewaretoken" value="6JtAJn5NtkbCQRz68xOovI6h6ORcIoytwJfQeV0R13cZ2lZZvz0D90mJbuwgT9rN">
+    
+    <p>
+      <label for="id_username">Username:</label><br>
+      <input type="text" name="username" value="Smith" maxlength="150" autofocus required id="id_username">
+      
+        <small style="color: grey">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</small>
+      
+      
+    </p>
+  
+    <p>
+      <label for="id_first_name">First name:</label><br>
+      <input type="text" name="first_name" value="John" maxlength="100" required id="id_first_name">
+      
+      
+    </p>
+  
+    <p>
+      <label for="id_last_name">Last name:</label><br>
+      <input type="text" name="last_name" value="Smith" maxlength="100" required id="id_last_name">
+      
+      
+    </p>
+  
+    <p>
+      <label for="id_email">Email:</label><br>
+      <input type="email" name="email" value="skipfish@example.com" required id="id_email">
+      
+      
+    </p>
+  
+    <p>
+      <label for="id_password1">Password:</label><br>
+      <input type="password" name="password1" required id="id_password1">
+      
+        <small style="color: grey"><ul><li>Your password can&#39;t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can&#39;t be a commonly used password.</li><li>Your password can&#39;t be entirely numeric.</li></ul></small>
+      
+      
+    </p>
+  
+    <p>
+      <label for="id_password2">Password confirmation:</label><br>
+      <input type="password" name="password2" required id="id_password2">
+      
+        <small style="color: grey">Enter the same password as before, for verification.</small>
+      
+      
+        <p style="color: red">The password is too similar to the email address.</p>
+      
+    </p>
+  
+  <!-- <div class="form-row">
+    
+    <label for="id_username">Username:</label> <input type="text" name="username" value="Smith" maxlength="150" autofocus required id="id_username">
+  </div>
+  <div class="form-row">
+    
+     
+    <input type="hidden" name="next" value="">
+  </div>
+  <div class="form-row">
+    
+    Reenter password:
+    
+    <input type="hidden" name="next" value="">
+  </div>
+  <div class="form-row">
+    
+    
+  </div>
+  <div class="form-row">
+    
+    
+  </div>
+  <div class="form-row">
+    <label for="id_email">Email:</label>
+    <input type="email" name="email" value="skipfish@example.com" required id="id_email">
+  </div> -->
+  <div class="submit-row">
+    <label>&nbsp;</label><input type="submit" value="Register">
+  </div>
+</form>
+
+</div>
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>

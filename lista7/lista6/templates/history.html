@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}History{% endblock %}
+
+{% block content %}
+    <h2>History</h2>
+    {% if user.is_authenticated %}
+        <form method="get" action="">
+            <input type="text" name="amount"/>
+            <input type="submit" value="Search for > amount" />
+        </form>
+        <table>
+            <tr>
+                <th>Receiver</th>
+                <th>Title</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Accepted</th>
+            </tr>
+            {% for t in transfers %}
+                <tr>
+                    <td>{{ t.receiver.account_number }}</td>
+                    <td>{{ t.title }}</td>
+                    <td>{{ t.amount }}</td>
+                    <td>{{ t.date }}</td>
+                    <td>{{ t.accepted }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Please <a href={% url 'login' %}>log in</a> first</p>
+    {% endif %}
+    <!-- <script src="{% static 'account_adder.js' %}"></script>  -->
+
+{% endblock %}

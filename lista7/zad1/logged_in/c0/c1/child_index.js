@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 4, 'name': 'login', 'dir': 'c0', 'linked': 5, 'url': 'http://localhost:8000/admin/login/', 'fetched': true, 'code': 200, 'len': 1996, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 4, 'issue_cnt': [ 2, 0, 0, 0, 0 ], 'sig': 0xd74807c2 },
+  { 'dupe': false, 'type': 4, 'name': 'logout', 'dir': 'c1', 'linked': 0, 'url': 'http://localhost:8000/admin/logout/', 'fetched': true, 'code': 302, 'len': 0, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'utf-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xfffbffff },
+  { 'dupe': false, 'type': 4, 'name': 'password_reset', 'dir': 'c2', 'linked': 5, 'url': 'http://localhost:8000/admin/password_reset/', 'fetched': true, 'code': 200, 'len': 1730, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'utf-8', 'missing': false, 'csens': true, 'child_cnt': 3, 'issue_cnt': [ 0, 0, 1, 0, 0 ], 'sig': 0xc236fa6c }
+];

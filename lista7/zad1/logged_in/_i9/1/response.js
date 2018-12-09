@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 500 Internal Server Error\x0aDate: Fri, 07 Dec 2018 22:58:44 GMT\x0aServer: WSGIServer/0.2 CPython/3.6.7\x0aContent-Type: text/plain\x0aContent-Length: 59\x0a\x0aA server error occurred.  Please contact the administrator.\x0d\x0a'}

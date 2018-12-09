@@ -1,0 +1,9 @@
+HTTP/1.1 302 Found
+Date: Fri, 07 Dec 2018 22:55:57 GMT
+Server: WSGIServer/0.2 CPython/3.6.7
+Content-Type: text/html; charset=utf-8
+Location: /accounts/login/?next=/history/
+X-Frame-Options: SAMEORIGIN
+Content-Length: 0
+Set-Cookie: sessionid=""; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/
+

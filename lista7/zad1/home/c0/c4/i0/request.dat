@@ -1,0 +1,12 @@
+POST /register/ HTTP/1.1
+Host: localhost:8000
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://localhost/
+Cookie: csrftoken=aD5DaCX8q9FgxJdRnevgMup8qJVOx2s0ADRTFaScYSGDJdDKKgHvqMFAvpASINlk
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 202
+
+csrfmiddlewaretoken=JiCs3LU5GXBONfSgiSmbWGjXvE1QMjBV9ioIyjP9eGCbZJi9FUyqAYzpAkGUX4uf&username=Smith&first_name=John&last_name=Smith&email=skipfish@example.com&password1=skipfish&password2=skipfish&next=

@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 Dec 2018 21:47:31 GMT
+Server: WSGIServer/0.2 CPython/3.6.7
+Content-Type: text/html; charset=utf-8
+Expires: Fri, 07 Dec 2018 21:47:31 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Length: 882
+Set-Cookie: csrftoken=vphBNaEjoselOHeA1eqKgdaNiTJ89CYYgXRiBAXzpQ3Ax55XDMam8cp4jsQ9eXCK; expires=Fri, 06 Dec 2019 21:47:31 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+[...truncated...]

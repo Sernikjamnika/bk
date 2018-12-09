@@ -1,0 +1,12 @@
+POST /transfer/ HTTP/1.1
+Host: localhost:8000
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://localhost/
+Cookie: csrftoken=7I5gFXNsvx6A6zqn210S1vKNlN3ztIvpFfXaM73Ktf1UR49mWc35b1JKq7jA0Jxs; sessionid=""
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 125
+
+csrfmiddlewaretoken=CCCHF2ap5Ve07mc3kpRaUwFErefqLw1ha9uBMcqH3D9kSRV2eAUn42EBwyvrix3k&title=skipfish&amount=1&account_number=1

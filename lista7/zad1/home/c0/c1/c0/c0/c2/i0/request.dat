@@ -1,0 +1,12 @@
+POST /admin/login/ HTTP/1.1
+Host: localhost:8000
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://localhost/
+Cookie: csrftoken=aD5DaCX8q9FgxJdRnevgMup8qJVOx2s0ADRTFaScYSGDJdDKKgHvqMFAvpASINlk
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 130
+
+csrfmiddlewaretoken=68cUU98C4pI3yLaxN4qXZSrj6x2DoAGbw8YapH3GC8JqKfAqa6CcDaHLbdHHzlzv&username=Smith&password=skipfish&next=/admin/

@@ -1,0 +1,33 @@
+HTTP/1.1 200 OK
+Date: Fri, 07 Dec 2018 21:47:31 GMT
+Server: WSGIServer/0.2 CPython/3.6.7
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 301
+Vary: Cookie
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <h1>Bank ZGCH</h1>
+    
+      <a href="/login/">Login</a>
+      <a href="/register/">Register</a>
+    
+  </header>
+  <hr>
+  <main>
+    
+    <h2>Home</h2>
+
+    
+
+  </main>
+  <hr>
+</body>
+</html>

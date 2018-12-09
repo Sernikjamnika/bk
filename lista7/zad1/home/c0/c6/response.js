@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 302 Found\x0aDate: Fri, 07 Dec 2018 21:49:29 GMT\x0aServer: WSGIServer/0.2 CPython/3.6.7\x0aContent-Type: text/html; charset=utf-8\x0aLocation: /accounts/login/?next=/transfer/\x0aX-Frame-Options: SAMEORIGIN\x0aContent-Length: 0\x0aVary: Cookie\x0a'}
