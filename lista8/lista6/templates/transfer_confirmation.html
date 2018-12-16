@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Confirmation transfer{% endblock %}
+
+{% block content %}
+    <h2>Confirmation transfer</h2>
+    {% if user.is_authenticated %}
+        <form method="post">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <th>Receiver</th>
+                    <th>Title</th>
+                    <th>Amount</th>
+                </tr>
+                    <input id="account_number" type="hidden" name="account_number" value="{{ transfer.receiver.account_number }}">
+                    <td>{{ transfer.receiver.account_number }}</td>
+                    <input id="title" type="hidden" name="title" value="{{ transfer.title }}"><td>{{ transfer.title }}</td>
+                    <input id="amount" type="hidden" name="amount" value="{{ transfer.amount }}"><td>{{ transfer.amount }}</td>
+            </table>
+            <button type="submit">Submit</button>
+            <button type="submit" name="cancel">Cancel</button>
+        </form>
+    {% else %}
+        <p>Please <a href={% url 'login' %}>log in</a> first</p>
+    {% endif %}
+    <!-- <script src="{% static 'account_adder.js' %}"></script>  -->
+
+
+{% endblock %}
